@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    font-family: Aditya;
+}
+header,footer,section,article{
+    display: block;
+}
+@font-face {
+    font-family: 'Aditya';
+	font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/Armata-Regular-webfont.eot");
+    src: url("../fonts/Armata-Regular-webfont.eot") format('embedded-opentype'),url("../fonts/Armata-Regular-webfont.woff") format('woff'),url("../fonts/Armata-Regular-webfont.ttf") format('truetype');
+}
+input{
+    display: block;
+    margin-bottom: 10px;
+    height: 30px;
+}
+input.large{
+    width: 75%;
+}
+input.small{
+    width: 30%;
+}

@@ -1,0 +1,132 @@
+<!--Author:Aditya Sharma; emailID:adityakumarsharma1988@gmail.com-->
+<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Submit Page</title>
+
+	<!-- Meta required for serving mobile site to mobiles. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- css -->
+    <link rel="stylesheet" href="./css/Common.css">
+    <link rel="stylesheet" href="./css/homePage.css">
+    <link rel="stylesheet" media="only screen and (max-width: 739px)" href="./css/mobile.css"> <!--best work with 320×480 -->
+    
+    <!-- Modernizr needs to be defined in the head for IE's sake -->
+	<script src="./js/modernizr.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="headerContent">
+            <div class="logo"></div>
+            <ul class="nav">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Projects</li>
+                    <li>Contact Us</li>
+            </ul>
+            <div class="mobileMenuDropDown">
+                <select>
+                    <option>Home</option>
+                    <option>About Us</option>
+                    <option>Projects</option>
+                    <option selected>Contact Us</option>
+                </select>
+            </div>
+        </div>    
+        
+    </header>
+    <section>
+        <article class="newsFeed">
+            <div class="SubHeading">Contact Us</div>
+            <div class="content">
+                <div class="carousel">
+                        <script id="insert" type="text/x-handlebars-template" target="_blank"> 
+                        {{#each carousel}}
+                        <div class='carouselItems'>    
+                            <div class="carouselImage" style="background-image: url('{{image}}')"></div>
+                            <div class="carouselContent">
+                                <div class="carouselHeading">{{heading}}</div>
+                                <div class="carouselText">{{text}}</div>
+                            </div>
+                        </div>    
+                        {{/each}}
+  
+                        <div class="carouselButtons">
+                        {{#times length}}                            
+                            <div class="carouselButton">&nbsp;</div>
+                        {{/times}}
+                        </div>                  
+                        </script>                  
+                </div>
+                <div class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+        </article>
+        <article class="formContainer">
+            <div class="contentArea">
+                <div class="space"></div>
+                <div class="innerContentArea">
+                    <div class="message"></div>
+                    <div class="mainFormContent">
+                         <form action="" class="contactDetail" method="get" onsubmit="return false;"> <!--preventing submission-->
+                             <input type="text" class="large" name="name" required placeholder="FirstName LastName">
+                             <div class="inlineMessage">Invalid Name</div>
+                             <input type="password" class="large" required name="password" maxlength="6" placeholder="Password">
+                             <div class="inlineMessage">Invalid Password</div>
+                             <input type="password" class="large" required name="cPassword" maxlength="6" placeholder="Confirm Password">
+                             <div class="inlineMessage">Password Not Matching</div>
+                             <input type="email" class="large" required name="email" placeholder="Email">
+                             <div class="inlineMessage">Invalid Email(Mention Valid ID)</div>
+                             <input type="url" class="large" required name="url" placeholder="WebSite URL">
+                             <div class="inlineMessage">Invalid URL</div>
+                             <input type="submit" value="Submit" id="submit">
+                        </form> 
+                        <div class="businessUnit">
+                            <div class="heading">Business Unit</div>
+                            <div class="content">
+                                <ul style="list-style-type:square">
+                                  <li>Aditya
+                                    <ul style="list-style-type:square">
+                                    <li>Aditya Private Service</li>
+                                    <li>Aditya Global Market</li>
+                                    <li>Aditya Government Service</li>
+                                    <li>Aditya(p)PHASIZE</li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="mobileCarousel">
+                        <script id="insert" type="text/x-handlebars-template" target="_blank"> 
+                        {{#each carousel}}
+                        <div class='carouselItems'>    
+                            <div class="carouselImage" style="background-image: url('{{image}}')"></div>
+                            <div class="carouselContent">
+                                <div class="carouselHeading">{{heading}}</div>
+                                <div class="carouselText">{{text}}</div>
+                            </div>
+                        </div>    
+                        {{/each}}
+  
+                        <div class="carouselButtons">
+                        {{#times length}}                            
+                            <div class="carouselButton">&nbsp;</div>
+                        {{/times}}
+                        </div>                  
+                        </script>                  
+        </div>
+    </section>
+    <footer></footer>
+    
+    <script src="./js/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/handlebars.js" type="text/javascript"></script>
+    <script src="./js/homePage.js"></script>
+	
+</body>
+</html>

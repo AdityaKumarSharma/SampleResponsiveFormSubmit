@@ -1,0 +1,157 @@
+.headerContent .mobileMenuDropDown{
+    display: table-cell;  
+    text-align: center;
+    vertical-align: middle;
+}
+.headerContent .nav{
+    display: none;
+}
+
+section {
+    padding: 2% 1%;
+}
+
+.newsFeed .content {
+    display: block;
+}
+
+.newsFeed .content .carousel {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    width: 18%;
+}
+
+.newsFeed .content .details {
+    display: block;
+    padding: 0 12px;
+    vertical-align: top;
+}
+.newsFeed .content .carousel {
+    display: none;
+}
+.mobileCarousel{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    width: 98%;
+}
+
+.mobileCarousel .carouselImage{
+    background-repeat: no-repeat;
+    /*background-size: 290px 115px;*/
+    background-size: 100% 100%;
+    height: 115px;
+    width: 290px;
+} 
+.mobileCarousel .carouselContent{
+    background-color: #B2FF66;
+    color: #ffffff;
+    padding: 2px 2px 0;
+} 
+.mobileCarousel .carouselItems{
+    display:none;
+    height: auto;
+}
+.mobileCarousel .carouselItems.active{
+    display:block;
+}
+.mobileCarousel .carouselContent .carouselHeading{
+    font-weight: bold;
+    font-size: 1.2em;
+    word-break: break-all;
+}
+.mobileCarousel .carouselContent .carouselText{
+    word-break: break-all;
+    font-size: 0.9em;
+    height: auto;
+}
+.mobileCarousel .carouselButtons{
+    background-color: #b2ff66;
+    padding-top: 2px;
+    text-align: right;
+    padding-right: 5px;
+} 
+.mobileCarousel .carouselButtons .carouselButton{
+    background-color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+
+} 
+.mobileCarousel .carouselButtons .carouselButton.active{
+    background-color: #000;
+} 
+
+
+
+
+
+.formContainer .contentArea{
+    display: block;
+}
+.formContainer .space{
+   display: block;
+}
+.formContainer .innerContentArea{
+    display: block;
+    padding: 1%;
+}
+.formContainer .innerContentArea .message{
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 3px;
+}
+.formContainer .innerContentArea .message.error{
+    background: #ff9999 none repeat scroll 0 0;
+    border: 1px solid #b70007;
+    color: #b70007;
+}
+.formContainer .innerContentArea .message.success{
+    background: #bced91 none repeat scroll 0 0;
+    border: 1px solid #324f17;
+    color: #324f17;
+}
+.formContainer .message.warning{
+    background: #ffcc99 none repeat scroll 0 0;
+    border: 1px solid #f88700;
+    color: #b70007;
+}
+.formContainer .innerContentArea .mainFormContent{
+    display: block;
+    margin-top: 3%;
+    vertical-align: top;
+}
+.formContainer .innerContentArea .mainFormContent .contactDetail{
+    display: block;
+    width: 133%;
+}
+.formContainer .innerContentArea .mainFormContent .contactDetail .inlineMessage{
+    display: none;
+    width: 75%;
+    font-size: 0.6em;
+    text-align: right;
+    color: #b70007;
+}
+.formContainer .innerContentArea .mainFormContent .contactDetail .inlineMessage.active{
+    display: block;
+}
+.formContainer .innerContentArea .mainFormContent .contactDetail input.activeInlineMessage{
+    background: #ff9999 none repeat scroll 0 0;
+    border: 1px solid #b70007;
+    color: #b70007;
+}
+.formContainer .innerContentArea .businessUnit{
+    display: block;
+    vertical-align: top;
+    width: 99%;
+}     
+.formContainer .innerContentArea .businessUnit .content{
+    background-color: #eee;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
+#submit{
+    width: 75%;
+}
